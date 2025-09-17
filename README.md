@@ -7,6 +7,7 @@ We compare:
 - **DistilBERT fine-tuning** (transfer learning)
 
 ## 📂 Project Structure
+ ```
 nlp-sentiment-analysis/
 ├── .venv/ # Virtual environment (not tracked in Git)
 ├── .vscode/
@@ -31,6 +32,8 @@ nlp-sentiment-analysis/
 ├── .gitignore # Ignore large/unnecessary files
 ├── README.md # Project overview
 └── requirements.txt # Project dependencies
+ ```
+
 ## 📊 Notebooks
 
 **01_data_eda.ipynb**
