@@ -8,24 +8,29 @@ We compare:
 
 ## 📂 Project Structure
 nlp-sentiment-analysis/
-│
-├── data/                 # Raw and processed data (ignored in GitHub)
-├── notebooks/            # Jupyter notebooks
-│   ├── 01_data_eda.ipynb             # Exploratory data analysis
-│   ├── 02_baseline_model.ipynb       # Logistic Regression baseline
-│   ├── 03_transformer_model.ipynb    # DistilBERT fine-tuning
-│   └── 04_evaluation_and_reporting.ipynb # Comparison & reporting
-│
+├── .venv/ # Virtual environment (not tracked in Git)
+├── .vscode/
+│ └── settings.json # VS Code workspace settings
+├── data/
+│ ├── processed/
+│ │ ├── test.csv
+│ │ ├── train.csv
+│ │ └── valid.csv
+│ └── raw/ # Raw data (empty or ignored)
+├── notebooks/
+│ ├── results/ # Notebook output/results
+│ ├── 01_data_eda.ipynb # Exploratory data analysis
+│ ├── 02_baseline_model.ipynb # Logistic Regression baseline
+│ ├── 03_transformer_model.ipynb # DistilBERT fine-tuning
+│ └── 04_evaluation_and_reporting.ipynb # Comparison & reporting
 ├── reports/
-|   ├── final_report.pdf  # Final report
-│   └── figures/          # Plots and visualisations
-|
-│
-├── src/                  # Source code (future: inference scripts, utils)
-├── requirements.txt      # Project dependencies
-├── README.md             # Project overview
-└── .gitignore            # Ignore large/unnecessary files
-
+│ └── figures/
+│ └── model_comparison.png # Visualisation of model comparison
+├── src/ # Source code (future: inference scripts, utils)
+├── .gitattributes
+├── .gitignore # Ignore large/unnecessary files
+├── README.md # Project overview
+└── requirements.txt # Project dependencies
 ## 📊 Notebooks
 
 **01_data_eda.ipynb**
