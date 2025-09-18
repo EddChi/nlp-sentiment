@@ -7,32 +7,54 @@ We compare:
 - **DistilBERT fine-tuning** (transfer learning)
 
 ## 📂 Project Structure
- ```
+```
 nlp-sentiment-analysis/
-├── .venv/ # Virtual environment (not tracked in Git)
+├── .venv/
 ├── .vscode/
-│ └── settings.json # VS Code workspace settings
+│ └── settings.json
 ├── data/
 │ ├── processed/
 │ │ ├── test.csv
 │ │ ├── train.csv
 │ │ └── valid.csv
-│ └── raw/ # Raw data (empty or ignored)
+│ └── raw/
 ├── notebooks/
-│ ├── results/ # Notebook output/results
-│ ├── 01_data_eda.ipynb # Exploratory data analysis
-│ ├── 02_baseline_model.ipynb # Logistic Regression baseline
-│ ├── 03_transformer_model.ipynb # DistilBERT fine-tuning
-│ └── 04_evaluation_and_reporting.ipynb # Comparison & reporting
+│ ├── results/
+│ ├── 01_data_eda.ipynb                     # Exploratory data analysis
+│ ├── 02_baseline_model.ipynb               # Logistic Regression baseline
+│ ├── 03_transformer_model.ipynb            # DistilBERT fine-tuning
+│ └── 04_evaluation_and_reporting.ipynb     # Comparison & reporting
 ├── reports/
 │ └── figures/
-│ └── model_comparison.png # Visualisation of model comparison
-├── src/ # Source code (future: inference scripts, utils)
+│ └── model_comparison.png
+├── src/
 ├── .gitattributes
-├── .gitignore # Ignore large/unnecessary files
-├── README.md # Project overview
-└── requirements.txt # Project dependencies
- ```
+├── .gitignore
+├── README.md
+└── requirements.txt
+```
+
+## ⚙️ Setup
+1. Clone this repository
+```
+git clone https://github.com/EddChi/nlp-sentiment-analysis.git
+cd nlp-sentiment-analysis
+```
+2. Create and activate a virtual environment
+Windows (PowerShell):
+```
+python -m venv .venv
+.venv\Scripts\Activate.ps1
+```
+Mac/Linux:
+```
+python3 -m venv .venv
+source .venv/bin/activate
+```
+3. Install dependencies
+```pip install -r requirements.txt```
+4. Launch Jupyter Notebook
+Navigate to the `notebooks/` folder to run each stage of the project.
 
 ## 📊 Notebooks
 
@@ -70,3 +92,6 @@ nlp-sentiment-analysis/
 - Try BERT-base / RoBERTa
 - Advanced evaluation (confusion matrices, ROC-AUC)
 - Inference script for new reviews
+
+## 📜 License
+This project is licensed under the [MIT License](LICENSE).
